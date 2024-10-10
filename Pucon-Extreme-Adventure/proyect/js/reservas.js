@@ -7,18 +7,16 @@ function guardarReserva(event) {
 
     // Obtiene los valores del formulario
     const nombre = document.getElementById('nombre').value;
+    const apellidos = document.getElementById('apellidos').value;
     const email = document.getElementById('email').value;
-    const caminata = document.getElementById('caminata').value;
     const fecha = document.getElementById('fecha').value;
-    const participantes = document.getElementById('participantes').value;
 
     // Crea un objeto con la información de la reserva
     const reserva = {
         nombre,
+        apellidos,
         email,
-        caminata,
         fecha,
-        participantes
     };
 
     // Añade la reserva al array

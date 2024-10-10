@@ -36,29 +36,20 @@
         <h1 class="mb-4">Reserva tu Caminata</h1>
         <form action="reservar-caminata.html" method="get">
             <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre completo</label>
+                <label for="nombre" class="form-label">Nombre</label>
                 <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="apellidos" class="form-label">Apellidos</label>
+                <input type="text" class="form-control" id="apellidos" name="apellidos" required>
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Correo electrónico</label>
                 <input type="email" class="form-control" id="email" name="email" required>
             </div>
             <div class="mb-3">
-                <label for="caminata" class="form-label">Selecciona la caminata</label>
-                <select class="form-select" id="caminata" name="caminata" required>
-                    <option value="">Elige una caminata</option>
-                    <option value="1">Caminata al Bosque Encantado</option>
-                    <option value="2">Sendero de la Montaña</option>
-                    <option value="3">Ruta del Río</option>
-                </select>
-            </div>
-            <div class="mb-3">
                 <label for="fecha" class="form-label">Fecha de la caminata</label>
                 <input type="date" class="form-control" id="fecha" name="fecha" required>
-            </div>
-            <div class="mb-3">
-                <label for="participantes" class="form-label">Número de participantes</label>
-                <input type="number" class="form-control" id="participantes" name="participantes" min="1" required>
             </div>
             <button type="submit" class="btn btn-primary">Reservar</button>
         </form>
